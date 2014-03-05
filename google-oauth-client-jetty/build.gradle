@@ -1,0 +1,6 @@
+
+description = 'Jetty extensions to the Google OAuth Client Library for Java.'
+dependencies {
+  compile project(':google-oauth-client-java6')
+    compile group: 'org.mortbay.jetty', name: 'jetty', version:'6.1.26'
+}

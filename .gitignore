@@ -1,4 +1,25 @@
+# Mercurial
 .hg
 .hgignore
 */target/*
 */bin/*
+
+# Gradle
+.gradle
+
+# Eclipse project files
+.classpath
+.project
+
+
+# IntelliJ
+.idea/
+/*/local.properties
+/*/out
+/*/*/build
+/*/*/production
+*.iml
+*.iws
+*.ipr
+*~
+*.swp

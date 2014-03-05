@@ -1,0 +1,14 @@
+
+description = 'Servlet and JDO extensions to the Google OAuth Client Library for Java.'
+dependencies {
+  compile project(':google-oauth-client')
+    compile group: 'com.google.http-client', name: 'google-http-client-jdo', version:'1.18.0-rc-SNAPSHOT'
+    compile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
+    compile group: 'javax.jdo', name: 'jdo2-api', version:'2.3-eb'
+    testCompile group: 'junit', name: 'junit', version:'4.8.2'
+    testCompile group: 'com.google.guava', name: 'guava-jdk5', version:'13.0'
+    testCompile group: 'org.datanucleus', name: 'datanucleus-core', version:'3.2.2'
+    testCompile group: 'org.datanucleus', name: 'datanucleus-api-jdo', version:'3.2.1'
+    testCompile group: 'org.datanucleus', name: 'datanucleus-rdbms', version:'3.2.1'
+    testCompile group: 'mysql', name: 'mysql-connector-java', version:'5.1.18'
+}

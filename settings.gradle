@@ -1,0 +1,14 @@
+rootProject.name = 'google-oauth-client-parent'
+include ':google-oauth-client'
+include ':google-oauth-client-assembly'
+include ':google-oauth-client-appengine'
+include ':google-oauth-client-servlet'
+include ':google-oauth-client-java6'
+include ':google-oauth-client-jetty'
+
+project(':google-oauth-client').projectDir = "$rootDir/google-oauth-client" as File
+project(':google-oauth-client-assembly').projectDir = "$rootDir/google-oauth-client-assembly" as File
+project(':google-oauth-client-appengine').projectDir = "$rootDir/google-oauth-client-appengine" as File
+project(':google-oauth-client-servlet').projectDir = "$rootDir/google-oauth-client-servlet" as File
+project(':google-oauth-client-java6').projectDir = "$rootDir/google-oauth-client-java6" as File
+project(':google-oauth-client-jetty').projectDir = "$rootDir/google-oauth-client-jetty" as File

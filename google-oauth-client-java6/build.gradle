@@ -1,0 +1,8 @@
+
+description = 'Java 6 (and higher) extensions to the Google OAuth Client Library for Java.'
+dependencies {
+  compile project(':google-oauth-client')
+    testCompile group: 'com.google.http-client', name: 'google-http-client-jackson', version:'1.18.0-rc-SNAPSHOT'
+    testCompile group: 'junit', name: 'junit', version:'4.8.2'
+    testCompile group: 'com.google.guava', name: 'guava-jdk5', version:'13.0'
+}
