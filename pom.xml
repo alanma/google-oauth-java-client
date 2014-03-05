@@ -131,33 +131,33 @@
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client</artifactId>
-        <version>${project.http.version}</version>
+        <version>1.17.0-rc</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-assembly</artifactId>
-        <version>${project.http.version}</version>
+        <version>1.17.0-rc</version>
         <type>pom</type>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-appengine</artifactId>
-        <version>${project.http.version}</version>
+        <version>1.17.0-rc</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-jackson</artifactId>
-        <version>${project.http.version}</version>
+        <version>1.17.0-rc</version>
       </dependency>
       <dependency>
         <groupId>com.google.http-client</groupId>
         <artifactId>google-http-client-jdo</artifactId>
-        <version>${project.http.version}</version>
+        <version>1.17.0-rc</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
         <artifactId>google-oauth-client</artifactId>
-        <version>${project.version}</version>
+        <version>1.17.0-rc</version>
       </dependency>
       <dependency>
         <groupId>com.google.oauth-client</groupId>
