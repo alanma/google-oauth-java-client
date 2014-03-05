@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FindBugsFilter>
+  <!-- http://findbugs.sourceforge.net/bugDescriptions.html -->
+  <LastVersion value="-1" relOp="NEQ"/>
+  <!-- The following have not yet been investigated -->
+  
+  <!-- The following are known to be bugs and should be fixed -->
+  
+  <!-- The following are known to NOT be bugs and should not be fixed -->
+  <And>
+    <But pattern="DM_DEFAULT_ENCODING"/>
+    <!-- Reliance on default encoding -->
+    <Class name="com.google.api.client.extensions.java6.auth.oauth2.AbstractPromptReceiver"/>
+  </And>
+  <And>
+    <Bug pattern="EQ_DOESNT_OVERRIDE_EQUALS"/>
+    <!-- Class doesn't override equals in superclass -->
+    <Class name="com.google.api.client.auth.oauth2.AuthorizationCodeResponseUrl"/>
+  </And>
+  <And>
+    <Bug pattern="EQ_DOESNT_OVERRIDE_EQUALS"/>
+    <!-- Class doesn't override equals in superclass -->
+    <Class name="com.google.api.client.auth.oauth2.AuthorizationRequestUrl"/>
+  </And>
+  <And>
+    <Bug pattern="EI_EXPOSE_REP,EI_EXPOSE_REP2"/> 
+    <!-- May expose internal representation by returning reference to mutable object -->
+    <!-- May expose internal representation by incorporating reference to mutable object -->
+    <Class name="com.google.api.client.auth.jsontoken.JsonWebSignature"/>
+  </And>
+  <And>
+    <Class name="com.google.api.client.auth.security.PrivateKeys"/><!--Deprecated Class -->
+  </And>
+  <And>
+    <Package name="com.google.api.client.auth.oauth"/>
+  </And>
+  <And>
+    <Bug pattern="BETA_CLASS_USAGE,BETA_FIELD_USAGE"/>
+    <Class name="com.google.api.client.auth.oauth2.AuthorizationCodeFlow" />
+  </And>
+</FindBugsFilter>
