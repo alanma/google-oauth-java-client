@@ -1,7 +1,7 @@
 
 description = 'Google App Engine extensions to the Google OAuth Client Library for Java.'
 dependencies {
-    compile group: 'com.google.http-client', name: 'google-http-client-appengine', version:'1.18.0-rc-SNAPSHOT'
+    compile group: 'com.google.http-client', name: 'google-http-client-appengine', version:'1.17.0-rc'
   compile project(':google-oauth-client')
   compile project(':google-oauth-client-servlet')
     compile group: 'javax.servlet', name: 'servlet-api', version:'2.5'
